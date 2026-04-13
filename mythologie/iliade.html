@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>L’Iliade – Academia Antiqua</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="mythologie.css">
+</head>
+<body>
+
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio-iliade');
+    const icon = document.querySelector('.icone-audio');
+
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = "⏸️"; // icône pause
+    } else {
+        audio.pause();
+        icon.textContent = "▶️"; // icône son
+    }
+}
+</script>
+
+  <!-- Barre de navigation interne -->
+ <nav class="navbar">
+    <a href="mythologie.html">Mythologie</a>
+    <a href="../cultureAntique/cultureAntique.html">Culture Antique</a>
+    <a href="../textes/textes.html">Textes</a>
+    <a href="../grammaire/grammaire.html">Grammaire</a>
+    <a href="../vocabulaire/vocabulaire.html">Vocabulaire</a>
+</nav>
+
+
+  <header class="header-page">
+    <h1>L’Iliade
+	<span class="icone-audio" onclick="toggleAudio()">
+        ▶️
+    </span>
+	</h1>
+	<audio id="audio-iliade">
+    <source src="../audio/La guerre de Troie.mp3" type="audio/mpeg">
+	</audio>
+    <p class="sous-titre">Le chant de la colère d’Achille et de la guerre de Troie</p>
+  </header>
+
+  <main class="contenu-page">
+
+    <section class="bloc">
+      <h2>Qu’est‑ce que l’Iliade ?</h2>
+      <p>
+        L’<strong>Iliade</strong> est un poème épique attribué à <strong>Homère</strong>,  
+        composé vers le VIIIᵉ siècle av. J.-C.  
+        Il raconte un épisode de la <strong>guerre de Troie</strong>,  
+        centrée sur la <strong>colère d’Achille</strong>.
+      </p>
+      <p>
+        Ce n’est pas toute la guerre : seulement quelques semaines de son dixième et dernier hiver.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Le poème : la colère d’Achille</h2>
+      <p>
+        Le poème s’ouvre sur l’invocation à la Muse et sur le thème central :
+      </p>
+      <p class="citation">
+        « Chante, déesse, la colère d’Achille, fils de Pélée… »
+      </p>
+      <p>
+        Cette colère provoque la mort de nombreux héros et bouleverse le destin des Achéens.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Le contexte de la guerre de Troie</h2>
+      <p>
+        La guerre trouve son origine dans le <strong>Jugement de Pâris</strong> :
+      </p>
+      <ul>
+        <li>Pâris choisit Aphrodite comme la plus belle</li>
+        <li>Elle lui promet l’amour d’<strong>Hélène</strong></li>
+        <li>Hélène quitte Sparte pour Troie</li>
+        <li>Les Grecs lancent une expédition pour la reprendre</li>
+      </ul>
+      <p>
+        L’Iliade se déroule à la fin de ce long conflit.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Les principaux héros</h2>
+
+      <h3>Côté grec :</h3>
+      <ul>
+        <li><strong>Achille</strong> — le plus grand des guerriers</li>
+        <li><strong>Agamemnon</strong> — chef des Achéens</li>
+        <li><strong>Ulysse</strong> — rusé et diplomate</li>
+        <li><strong>Ajax</strong> — puissant combattant</li>
+        <li><strong>Patrocle</strong> — ami et compagnon d’Achille</li>
+      </ul>
+
+      <h3>Côté troyen :</h3>
+      <ul>
+        <li><strong>Hector</strong> — prince de Troie, héros noble et courageux</li>
+        <li><strong>Pâris</strong> — déclencheur de la guerre</li>
+        <li><strong>Priam</strong> — roi de Troie</li>
+        <li><strong>Énée</strong> — survivant promis à un grand destin</li>
+      </ul>
+    </section>
+
+    <section class="bloc">
+      <h2>Les dieux dans l’Iliade</h2>
+      <p>
+        Les dieux interviennent constamment dans le conflit :
+      </p>
+      <ul>
+        <li><strong>Héra</strong> et <strong>Athéna</strong> soutiennent les Grecs</li>
+        <li><strong>Aphrodite</strong> protège Pâris et les Troyens</li>
+        <li><strong>Apollon</strong> favorise Troie</li>
+        <li><strong>Zeus</strong> arbitre le destin</li>
+      </ul>
+      <p>
+        Le monde humain et le monde divin sont intimement liés.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Résumé de l’intrigue</h2>
+      <p>
+        L’Iliade raconte :
+      </p>
+      <ul>
+        <li>la querelle entre Achille et Agamemnon</li>
+        <li>le retrait d’Achille du combat</li>
+        <li>les exploits d’Hector</li>
+        <li>la mort de Patrocle</li>
+        <li>le retour d’Achille sur le champ de bataille</li>
+        <li>le duel entre Achille et Hector</li>
+        <li>la supplication de Priam pour récupérer le corps de son fils</li>
+      </ul>
+      <p>
+        Le poème s’achève sur les funérailles d’Hector.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Les thèmes majeurs</h2>
+      <p>L’Iliade explore :</p>
+      <ul>
+        <li>la <strong>colère</strong> et ses conséquences</li>
+        <li>la <strong>gloire</strong> et la <strong>mort</strong></li>
+        <li>l’<strong>honneur</strong> et la <strong>honte</strong></li>
+        <li>la <strong>fragilité humaine</strong> face au destin</li>
+        <li>la <strong>compassion</strong> (scène de Priam et Achille)</li>
+      </ul>
+      <p>
+        C’est un poème profondément humain, malgré la présence des dieux.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Le sens de l’œuvre</h2>
+      <p>L’Iliade symbolise :</p>
+      <ul>
+        <li>la grandeur et la misère de la condition humaine</li>
+        <li>la violence de la guerre</li>
+        <li>la quête de gloire et de sens</li>
+        <li>la possibilité de réconciliation même dans la tragédie</li>
+      </ul>
+      <p>
+        C’est un texte fondateur de la culture occidentale.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2>Le savais‑tu ?</h2>
+      <p>
+        L’Iliade ne raconte pas la chute de Troie :  
+        cet épisode se trouve dans d’autres textes,  
+        comme les <em>Éthiopides</em> ou l’<em>Iliou Persis</em>.
+      </p>
+    </section>
+
+    <div class="retour">
+       <a href="mythologie.html">← Retour à la mythologie</a>
+    </div>
+
+  </main>
+
+</body>
+</html>
