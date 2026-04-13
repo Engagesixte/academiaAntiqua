@@ -1,5 +1,5 @@
 document.getElementById("mythologie").onclick = () => {
-  window.location.href = "mythologie.html";
+  window.location.href = "./mythologie/mythologie.html";
 };
 
 document.getElementById("culture").onclick = () => {
