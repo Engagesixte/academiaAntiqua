@@ -7,7 +7,20 @@
   <link rel="stylesheet" href="mythologie.css">
 </head>
 <body>
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio-iliade');
+    const icon = document.querySelector('.icone-audio');
 
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = "⏸️"; // icône pause
+    } else {
+        audio.pause();
+        icon.textContent = "▶️"; // icône son
+    }
+}
+</script>
   <!-- Barre de navigation interne -->
   <nav class="navbar">
     <a href="mythologie.html">Mythologie</a>
@@ -18,7 +31,16 @@
   </nav>
 
   <header class="header-page">
-    <h1>La Création du Monde</h1>
+    <h1>La Création du Monde
+	<span class="icone-audio" onclick="toggleAudio()">
+        ▶️
+    </span>
+	</h1>
+	
+	<audio id="audio-iliade">
+    <source src="../audio/Creation.mp3" type="audio/mpeg">
+	</audio>
+	
     <p class="sous-titre">La cosmogonie grecque d’après Hésiode et les traditions anciennes</p>
   </header>
 

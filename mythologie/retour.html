@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Le Retour d’Ulysse – Academia Antiqua</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="mythologie.css">
+</head>
+<body>
+
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio-retour');
+    const icon = document.querySelector('.icone-audio');
+
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = "⏸️";
+    } else {
+        audio.pause();
+        icon.textContent = "▶️";
+    }
+}
+</script>
+
+<!-- Barre de navigation interne -->
+<nav class="navbar">
+  <a href="mythologie.html">Mythologie</a>
+  <a href="culture.html">Culture Antique</a>
+  <a href="textes.html">Textes</a>
+  <a href="grammaire.html">Grammaire</a>
+  <a href="vocabulaire.html">Vocabulaire</a>
+</nav>
+
+<header class="header-page">
+  <h1>Le Retour d’Ulysse
+  <span class="icone-audio" onclick="toggleAudio()">
+        ▶️
+    </span>
+  </h1>
+    <audio id="audio-retour">
+      <source src="../audio/Retour.mp3" type="audio/mpeg">
+    </audio>
+  
+  <p class="sous-titre">La Nostos : le retour du roi d’Ithaque</p>
+</header>
+
+<main class="contenu-page">
+
+  <section class="bloc">
+    <h2>Qu’est‑ce que le Retour d’Ulysse ?</h2>
+    <p>
+      Le <strong>Retour d’Ulysse</strong>, ou <em>Nostos</em>, est la dernière grande partie de l’Odyssée.  
+      Après vingt ans d’absence, Ulysse revient enfin à <strong>Ithaque</strong> pour retrouver  
+      son foyer, son fils Télémaque et son épouse Pénélope.
+    </p>
+    <p>
+      Ce retour n’est pas un simple voyage :  
+      c’est une <strong>reconquête</strong>, une <strong>reconnaissance</strong>,  
+      et une <strong>restauration de l’ordre</strong>.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>L’arrivée secrète à Ithaque</h2>
+    <p>
+      Ulysse est ramené à Ithaque par les Phéaciens.  
+      Il s’endort, et lorsqu’il se réveille, il ne reconnaît pas son île.  
+      Athéna lui apparaît et lui révèle la situation :  
+      son palais est envahi par les <strong>prétendants</strong>.
+    </p>
+    <p>
+      Pour agir sans être reconnu, elle le transforme en <strong>mendiant</strong>.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Les premières reconnaissances</h2>
+    <p>Ulysse retrouve d’abord ceux qui lui sont fidèles :</p>
+    <ul>
+      <li><strong>Eumée</strong>, le porcher loyal</li>
+      <li><strong>Télémaque</strong>, son fils, qu’il n’a pas vu depuis vingt ans</li>
+      <li><strong>Argos</strong>, son vieux chien, qui meurt en le reconnaissant</li>
+    </ul>
+    <p>
+      Chaque reconnaissance est une scène émouvante,  
+      marquée par la prudence et la ruse.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Ulysse face aux prétendants</h2>
+    <p>
+      Déguisé en mendiant, Ulysse observe les prétendants qui  
+      dévorent ses richesses et harcèlent Pénélope.
+    </p>
+    <p>
+      Il endure les insultes, les coups, les humiliations,  
+      attendant le moment juste pour frapper.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>L’épreuve de l’arc</h2>
+    <p>
+      Pénélope annonce une épreuve :  
+      celui qui saura bander l’arc d’Ulysse et tirer à travers douze haches  
+      deviendra son époux.
+    </p>
+    <p>
+      Aucun prétendant n’y parvient.  
+      Le mendiant demande à essayer.  
+      Il bande l’arc sans effort.
+    </p>
+    <p>
+      C’est le signal : la vengeance commence.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>La vengeance d’Ulysse</h2>
+    <p>
+      Avec Télémaque, Eumée et Philoétios, Ulysse massacre les prétendants.  
+      C’est un acte de <strong>justice royale</strong>,  
+      mais aussi une purification du palais.
+    </p>
+    <p>
+      Les servantes complices sont punies,  
+      et l’ordre ancien est restauré.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>La reconnaissance avec Pénélope</h2>
+    <p>
+      Pénélope ne reconnaît pas immédiatement Ulysse.  
+      Elle le met à l’épreuve en parlant du <strong>lit nuptial</strong>,  
+      construit autour d’un olivier vivant.
+    </p>
+    <p>
+      Ulysse réagit avec émotion :  
+      nul autre ne pouvait connaître ce secret.
+    </p>
+    <p>
+      Alors seulement, Pénélope sait que son mari est revenu.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>La paix retrouvée</h2>
+    <p>
+      Les familles des prétendants veulent se venger,  
+      mais Athéna intervient pour imposer la paix.
+    </p>
+    <p>
+      Le retour d’Ulysse s’achève ainsi par la <strong>réconciliation</strong>  
+      et la restauration de l’harmonie dans l’île.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Le sens du Retour d’Ulysse</h2>
+    <p>Le retour d’Ulysse symbolise :</p>
+    <ul>
+      <li>la fidélité au foyer</li>
+      <li>la patience et la ruse</li>
+      <li>la restauration de l’ordre légitime</li>
+      <li>la reconnaissance des liens familiaux</li>
+      <li>la victoire de l’intelligence sur la force brute</li>
+    </ul>
+    <p>
+      C’est l’un des plus beaux récits de la littérature antique.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Le savais‑tu ?</h2>
+    <p>
+      Le mot grec <em>nostos</em> signifie « retour ».  
+      C’est de lui que vient le mot <strong>nostalgie</strong> :  
+      la douleur du retour impossible.
+    </p>
+  </section>
+
+  <div class="retour">
+    <a href="mythologie.html">← Retour à la mythologie</a>
+  </div>
+
+</main>
+
+</body>
+</html>

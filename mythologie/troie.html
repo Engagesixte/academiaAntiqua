@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>La Guerre de Troie – Academia Antiqua</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="mythologie.css">
+</head>
+<body>
+
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio-troie');
+    const icon = document.querySelector('.icone-audio');
+
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = "⏸️";
+    } else {
+        audio.pause();
+        icon.textContent = "▶️";
+    }
+}
+</script>
+
+<!-- Barre de navigation interne -->
+<nav class="navbar">
+  <a href="mythologie.html">Mythologie</a>
+  <a href="culture.html">Culture Antique</a>
+  <a href="textes.html">Textes</a>
+  <a href="grammaire.html">Grammaire</a>
+  <a href="vocabulaire.html">Vocabulaire</a>
+</nav>
+
+<header class="header-page">
+  <h1>La Guerre de Troie
+    <span class="icone-audio" onclick="toggleAudio()">
+        ▶️
+    </span>
+  </h1>
+  <audio id="audio-troie">
+      <source src="../audio/Troie.mp3" type="audio/mpeg">
+    </audio>
+  <p class="sous-titre">Le grand conflit héroïque du monde grec</p>
+</header>
+
+<main class="contenu-page">
+
+  <section class="bloc">
+    <h2>Qu’est‑ce que la Guerre de Troie ?</h2>
+    <p>
+      La Guerre de Troie est l’un des récits fondateurs de la mythologie grecque.  
+      Elle met en scène un conflit entre les <strong>Grecs</strong> (ou Achéens)  
+      et la cité de <strong>Troie</strong>, en Asie Mineure.
+    </p>
+    <p>
+      Ce n’est pas seulement une guerre :  
+      c’est un cycle mythique immense, où se croisent dieux, héros, passions et destin.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Les origines du conflit</h2>
+    <p>La guerre trouve son origine dans un enchaînement d’événements mythiques :</p>
+    <ul>
+      <li>le <strong>jugement de Pâris</strong>, qui choisit Aphrodite comme la plus belle</li>
+      <li>la promesse d’Aphrodite : l’amour d’<strong>Hélène</strong>, épouse de Ménélas</li>
+      <li>l’enlèvement d’Hélène par <strong>Pâris</strong></li>
+      <li>la colère des rois grecs, unis par le <strong>serment de Tyndare</strong></li>
+    </ul>
+    <p>
+      Les Grecs rassemblent alors une immense armée pour récupérer Hélène et punir Troie.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Les principaux héros</h2>
+    <p>La guerre réunit les plus grands héros du monde grec :</p>
+    <ul>
+      <li><strong>Achille</strong>, le plus puissant des guerriers</li>
+      <li><strong>Agamemnon</strong>, chef de l’armée grecque</li>
+      <li><strong>Ulysse</strong>, roi d’Ithaque, maître de la ruse</li>
+      <li><strong>Ajax</strong>, héros immense et indomptable</li>
+      <li><strong>Hector</strong>, prince de Troie et défenseur de la cité</li>
+      <li><strong>Énée</strong>, survivant troyen promis à un grand destin</li>
+    </ul>
+    <p>
+      Chacun incarne une facette de l’héroïsme grec.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Le rôle des dieux</h2>
+    <p>
+      Les dieux de l’Olympe prennent part au conflit,  
+      soutenant l’un ou l’autre camp selon leurs affinités :
+    </p>
+    <ul>
+      <li><strong>Héra</strong> et <strong>Athéna</strong> soutiennent les Grecs</li>
+      <li><strong>Aphrodite</strong> et <strong>Apollon</strong> soutiennent Troie</li>
+      <li><strong>Zeus</strong> tente de maintenir l’équilibre</li>
+    </ul>
+    <p>
+      Le conflit devient ainsi un affrontement à la fois humain et divin.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Les grands épisodes</h2>
+    <p>Parmi les moments les plus célèbres du cycle troyen :</p>
+    <ul>
+      <li>le <strong>duel entre Ménélas et Pâris</strong></li>
+      <li>la <strong>colère d’Achille</strong> et la mort de Patrocle</li>
+      <li>le <strong>combat entre Achille et Hector</strong></li>
+      <li>la mort d’Achille, frappé par Pâris</li>
+      <li>la ruse du <strong>cheval de Troie</strong></li>
+      <li>la <strong>chute de la ville</strong> et son incendie</li>
+    </ul>
+  </section>
+
+  <section class="bloc">
+    <h2>La chute de Troie</h2>
+    <p>
+      Incapables de vaincre par la force, les Grecs utilisent la ruse d’Ulysse :  
+      un immense cheval de bois, laissé comme offrande.
+    </p>
+    <p>
+      Les Troyens l’introduisent dans la ville.  
+      La nuit venue, les guerriers cachés à l’intérieur ouvrent les portes aux Grecs.  
+      Troie est prise, pillée et incendiée.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Le sens du mythe</h2>
+    <p>La Guerre de Troie symbolise :</p>
+    <ul>
+      <li>le conflit entre honneur et destin</li>
+      <li>la fragilité des cités humaines</li>
+      <li>la puissance destructrice de la colère</li>
+      <li>la gloire héroïque et son prix</li>
+      <li>la place des dieux dans le destin des hommes</li>
+    </ul>
+    <p>
+      Elle est devenue le modèle de toutes les épopées occidentales.
+    </p>
+  </section>
+
+  <section class="bloc">
+    <h2>Le savais‑tu ?</h2>
+    <p>
+      L’Iliade d’Homère ne raconte pas toute la guerre,  
+      mais seulement quelques semaines de la dixième année du siège.
+    </p>
+  </section>
+
+  <div class="retour">
+    <a href="mythologie.html">← Retour à la mythologie</a>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -6,7 +6,20 @@
   <link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="mythologie.css">
 </head>
 <body>
+<script>
+function toggleAudio() {
+    const audio = document.getElementById('audio-iliade');
+    const icon = document.querySelector('.icone-audio');
 
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = "⏸️"; // icône pause
+    } else {
+        audio.pause();
+        icon.textContent = "▶️"; // icône son
+    }
+}
+</script>
   <!-- Barre de navigation interne -->
   <nav class="navbar">
     <a href="mythologie.html">Mythologie</a>
@@ -17,7 +30,10 @@
   </nav>
 
   <header class="header-page">
-    <h1>Hélène de Troie</h1>
+    <h1>Hélène
+	<audio id="audio-iliade">
+    <source src="../audio/La guerre de Troie.mp3" type="audio/mpeg">
+	</audio></h1>
     <p class="sous-titre">La femme dont la beauté déclencha la guerre de Troie</p>
   </header>
 
