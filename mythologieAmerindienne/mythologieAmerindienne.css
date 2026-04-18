@@ -19,6 +19,7 @@ body {
     background-image: url("fondAmerique.png");
     background-size: contain;
     background-position: center top;
+    background-attachment: fixed; /* fixe l’image */
     background-repeat: no-repeat;
     background-color: #000;
   }
