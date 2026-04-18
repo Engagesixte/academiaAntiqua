@@ -7,7 +7,7 @@ body {
 .fond {
   width: 100vw;
   height: 100vh;
-  background-image: url("images/academiaAntiqua(1).png");
+  background-image: url("images/mythologie.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,13 +19,22 @@ body {
 /* --- Barre de navigation interne --- */
 
 .navbar {
+  position: fixed;        /* la fixe en haut */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;          /* passe au-dessus du contenu */
+  
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 1rem;
+
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid #d4b27f;
+  backdrop-filter: blur(4px); /* optionnel : effet verre dépoli très classe */
 }
+
 
 .navbar a {
   color: #f8e7c0;
@@ -72,12 +81,21 @@ body {
 /* --- Pages internes --- */
 
 .header-page {
+  position: fixed;
+  top: 70px; /* juste sous la navbar */
+  left: 0;
+  width: 100%;
   text-align: center;
-  padding: 2rem 0 1rem;
+
+  padding: 1.5rem 0 1rem;
   background: rgba(0, 0, 0, 0.6);
   color: #f8e7c0;
   font-family: "Cinzel", serif;
+
+  z-index: 900; /* sous la navbar mais au-dessus du contenu */
+  backdrop-filter: blur(4px); /* optionnel mais magnifique */
 }
+
 
 .header-page h1 {
   margin: 0;
@@ -93,7 +111,7 @@ body {
 
 .contenu-page {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 220px auto 2rem;  /* ⬅ ICI : on descend tout le bloc */
   padding: 1rem 2rem;
   color: #f8e7c0;
   background: rgba(0, 0, 0, 0.55);

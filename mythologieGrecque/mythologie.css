@@ -1,0 +1,37 @@
+/* --- Fond spécifique aux pages de mythologie --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("fondGrece.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* fixe l’image */
+  min-height: 100vh;
+}
+
+
+
+
+/* Correction mobile (iOS/Android) */
+@media (max-width: 768px) {
+  body {
+    background-image: url("fondGrece.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #000;
+  }
+}
+
+.icone-audio {
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.icone-audio:hover {
+    transform: scale(1.2);
+}
+
