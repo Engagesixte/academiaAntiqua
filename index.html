@@ -3,21 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Academia Antiqua</title>
-  <link rel="stylesheet" href="style.css">
+  <style> 
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+
+.carte {
+  height: 120px; 
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid #d4b27f;
+  color: #f8e7c0;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.carte:hover {
+  transform: scale(1.08);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+.fond {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/mythologie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  .carte {
+    height: 100px;
+    font-size: 1rem;
+  }
+}
+
+  </style>
 </head>
 <body>
 
   <div class="fond">
 
     <div class="menu">
-      <div class="carte" id="mythologieGrecque">Mythologie grecque</div>
-      <div class="carte" id="mythologieScandinave">Mythologie scandinave</div>
-      <div class="carte" id="mythologieMesopotamienne">Mythologie mésopotamienne</div>
-      <div class="carte" id="mythologieEgyptienne">Mythologie égyptienne</div>
-      <div class="carte" id="mythologieHindoue">Mythologie hindoue</div>
-	  <div class="carte" id="mythologieChinoise">Mythologie chinoise</div>
-      <div class="carte" id="mythologieAmerindienne">Mythologie amerindienne</div>
-      <div class="carte" id="mythologieSubSaharienne">Mythologie sub-saharienne</div>
+      <div class="carte" id="mythologieGrecque">Mythologie <br>grecque</div>
+      <div class="carte" id="mythologieScandinave">Mythologie <br>scandinave</div>
+      <div class="carte" id="mythologieMesopotamienne">Mythologie <br>mésopotamienne</div>
+      <div class="carte" id="mythologieEgyptienne">Mythologie <br>égyptienne</div>
+      <div class="carte" id="mythologieHindoue">Mythologie <br>hindoue</div>
+	  <div class="carte" id="mythologieChinoise">Mythologie <br>chinoise</div>
+      <div class="carte" id="mythologieAmerindienne">Mythologie <br>amerindienne</div>
+      <div class="carte" id="mythologieSubSaharienne">Mythologie <br>sub-saharienne</div>
     </div> 
 
   </div>
