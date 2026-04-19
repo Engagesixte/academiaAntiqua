@@ -160,3 +160,77 @@ body {
   background-repeat: no-repeat;
   z-index: -1; /* derrière tout */
 }
+
+/* --- MODE SMARTPHONE --- */
+@media (max-width: 768px) {
+
+  /* NAVBAR : devient non fixe */
+  .navbar {
+    position: static;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  /* HEADER : devient non fixe et plus petit */
+  .header-page {
+    position: static;
+    padding: 1rem 0 0.5rem;
+    margin-top: 0;
+  }
+
+  .header-page h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+  }
+
+  .sous-titre {
+    font-size: 0.9rem;
+  }
+
+  /* CONTENU : remonte car plus de header fixe */
+  .contenu-page {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  /* TABLEAU DES DIEUX : passe en 2 colonnes */
+  .tableau-dieux {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .dieu {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* --- MODE PAYSAGE SMARTPHONE --- */
+@media (max-height: 500px) {
+
+  .navbar {
+    position: static;
+  }
+
+  .header-page {
+    position: static;
+  }
+
+  .header-page h1 {
+    font-size: 1.3rem;
+  }
+
+  .contenu-page {
+    margin: 0.5rem auto;
+  }
+
+  .tableau-dieux {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
