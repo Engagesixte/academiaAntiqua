@@ -38,3 +38,37 @@ body {
 .icone-audio:hover {
     transform: scale(1.2);
 }
+/* Structure générale du titre */
+.titre-macaron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Le mot central (Hel, Odin, Thor…) */
+.titre-texte {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Style commun aux deux macarons */
+.titre-macaron-realiste img,
+.titre-macaron-manuscrit img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #b08a4a;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet hover */
+.titre-macaron-realiste img:hover,
+.titre-macaron-manuscrit img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 18px rgba(176,138,74,0.9);
+}
